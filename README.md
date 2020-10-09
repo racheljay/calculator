@@ -1,6 +1,7 @@
 # calculator
 
 ### Classes
+(what could potential classes be?)
 - numbers
 - operators
 - calculator - the mother ship, has its own view contains all other objects?
@@ -66,6 +67,12 @@ init() {
                     - if two operators in a row, the newest operator replaces the old operator
             # if (=) return the final sum
             # if (clear) start from scratch
+
+How to make a button?
+
+    - document create div
+    - take an id
+    - give it text content
 
 
 

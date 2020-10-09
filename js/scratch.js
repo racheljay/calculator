@@ -1,6 +1,6 @@
 const main = document.getElementById('main');
 
-let start = 0;
+let start = [0];
 
 const container = document.createElement('div');
 container.setAttribute('class', 'container');
@@ -23,8 +23,9 @@ for (let i = 0; i <= 9; i++) {
     numBtn.innerHTML = i;
     numBtnBox.appendChild(numBtn);
     numBtn.addEventListener("click", (e) => {
-        start = (e.target.id).toString();
-        display.innerHTML = start;
+        start.push(e.target.id);
+        let dis = start.join(' ');
+        display.innerHTML = dis;
         console.log(e.target.id)
 
     })
